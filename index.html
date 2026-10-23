@@ -50,7 +50,11 @@
         }
       }
     </style>
-  <link rel="icon" href="/favicon.ico"/></head>
+  <link rel="icon" href="/favicon.ico"/>    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/assets/fonts/web/Nunito_600SemiBold.3e017857330990d1f317b4a2f96ade69.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/assets/fonts/web/Nunito_700Bold.8b8abc4b50aecc34a7cceb2537c56eda.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/assets/fonts/web/Nunito_800ExtraBold.06e7d7e693ec7d7d9d90bd277e3cefce.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/assets/fonts/web/Nunito_900Black.e1bb4a49f3f681a471e983e93d72d5d4.woff2">
+  </head>
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <div id="root"></div>
@@ -88,6 +92,8 @@
         function tick() {
           shown += (target - shown) * 0.18;
           if (target - shown < 0.2) shown = target;
+          // while waiting for the next step, creep a little ahead so the bar never looks frozen (never past 97 until the app is ready)
+          if (shown >= target && target < 100) shown = Math.min(shown + 0.035, target + 6, 97);
           paint(shown);
           if (shown < 100) requestAnimationFrame(tick);
           else setTimeout(function () { bar.classList.add("done"); setTimeout(function () { bar.remove(); }, 400); }, 250);
@@ -95,7 +101,7 @@
         window.__splashProgress = function (p) { target = Math.max(target, Math.min(100, p)); };
         window.__splashReady = function () { target = 100; };
         requestAnimationFrame(tick);
-        window.__splashBundle = { src: "/_expo/static/js/web/index-1abd037cd10996cb92474a61f340261d.js", size: Number("1492704") || 0 };
+        window.__splashBundle = { src: "/_expo/static/js/web/index-b3880207df6dad19e4f41eeee0643e77.js", size: Number("1486653") || 0 };
         var b = window.__splashBundle;
         if (b.src.charAt(0) === "/" && b.size > 0 && window.fetch && window.ReadableStream) {
           fetch(b.src).then(function (res) {
