@@ -1,4 +1,4 @@
-# Buryat Language Learning App (prototype)
+# Soyomgo - Buryat Language Learning App (prototype)
 Prototype, deployed to:
 https://user863.github.io. 
 
