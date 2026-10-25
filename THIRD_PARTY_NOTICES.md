@@ -50,6 +50,7 @@ Audio never leaves the device: recognition runs in the browser.
 | App logo emblem (flame, sun and moon) | Flag of Buryatia on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Buryatia.svg), own work by Elvonudinium | Public domain. Redrawn here in other colours. |
 | Outline of Lake Baikal and Olkhon Island | `Lake_Baikal.svg`, supplied by the project owner; recoloured and turned | **Origin and licence to be confirmed by the owner.** The Selenga river and Ulan-Ude on the map are drawn schematically; they are not in that file. |
 | Pictures in the picture games (dog, cat, house, and about thirty more) | [Icons8](https://icons8.com/icons/arcade), Arcade style, 96 px PNG | Icons8 free licence: use in an app or website with a link to Icons8 (shown in the picture games and on the Credits screen). They are downloaded by `scripts/fetch-icons.sh` and kept out of the source repository, since the licence does not allow redistributing them as standalone files. **Please re-read Icons8's current licence before release.** |
+| About 550 more Arcade icons shown only on the experimental icon-check page (web) | [Icons8](https://icons8.com/icons/arcade), 96 px PNG, `public/icon-check/icons/` | Same terms as above; the page links to Icons8. Not in the source repository. |
 | Character, scenery drawings (pine, ger, nerpa, ice) | Original artwork for this project | MIT, with the code |
 
 ## Software
