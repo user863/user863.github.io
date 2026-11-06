@@ -16,7 +16,7 @@ If you reuse any of it, follow the licence of that part, not only the MIT licenc
 | Cyrillic-to-script letter correspondences | `src/content/cyrillic-script.json` | The "Buryat scripts" table of the Wikipedia article [Buryat language](https://en.wikipedia.org/wiki/Buryat_language) (which cites the Institute of the Estonian Language) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | Extracted and annotated. Stays under CC BY-SA 4.0. |
 | Unicode code points and names of the Mongolian block | `src/content/script.json` | [Unicode Character Database](https://www.unicode.org/ucd/) | [Unicode licence](https://www.unicode.org/license.txt) | None |
 | The 36-letter Buryat Cyrillic alphabet and a short word list | `src/content/alphabet.json`, `src/content/words.json` | Chart attributed to Burlang.Nom, as cited by the [buryat.global](https://buryat.global) guide | The alphabet is a fact and is not claimed as anyone's text. **Licence of the buryat.global guide itself: not confirmed.** | Re-typed. Confirm before wide release. |
-| Letter sound hints, respellings, comprehension tiers | `src/content/sounds.json`, `src/engine/` | Written for this project (drafted with an AI assistant) | MIT, with the rest of the code | Unreviewed approximations. |
+| Letter sound hints, respellings, comprehension tiers | `src/content/sounds.json`, `src/engine/` | Written for this project, needs review| MIT, with the rest of the code | Unreviewed approximations. |
 
 ## Fonts
 
@@ -62,11 +62,6 @@ AsyncStorage, all under the MIT licence, plus their own dependencies. A check of
 permissive licences only (MIT, ISC, BSD, Apache-2.0, 0BSD, BlueOak, CC0, MPL-2.0 for two packages, and one dual-licensed
 BSD-3-Clause OR GPL-2.0, used under BSD-3-Clause). Run `npx license-checker --production` for the full list.
 
-## Not included
-
-- The Buryat children's plays, Bible, books and poems that are part of the Sarana corpus. Their rights are unknown and they are not used.
-- Any machine translation of them (`docs/childrens-plays-en.md` is for private study and is not part of the public repository).
-- Raw downloaded datasets (`scripts/cache/`).
 
 ## Privacy
 
